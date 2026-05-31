@@ -14,41 +14,55 @@ title: Vue d'ensemble du projet
 
 !!! info "Informations générales"
     **Session**: Été 2026  
-    **Auteur(s)**: <!-- Nom de chaque membre (matricule)  -->  
-    **Thème(s)**: <!-- Thèmes principaux abordés dans le projet  -->  
-    **Superviseur(s)**: <!-- Nom du superviseur (affiliation)  -->  
-    **Collaborateur(s):** <!-- Nom de(s) collaborateur(s) et partenaire(s)` -->  
+    **Auteur(s)**: Oualid Ouakli  
+    **Thème(s)**: Navigation intérieure, cartographie participative, développement mobile  
+    **Superviseur(s)**: Louis-Édouard Lafontant (DIRO, Université de Montréal)  
+    **Collaborateur(s):** Aucun (projet solo)
+
+# Spip — Cartographie progressive et guidage personnalisé par la marche
 
 ## Description du projet
 
-> :bulb: N'oubliez pas d'effacer ou mettre en commentaires les notes (`>`) en début de section
-
 ### Contexte
 
-> Présentez le contexte général dans lequel s’inscrit votre projet (social, organisationnel, technologique, éducatif, environnemental, etc.).
+L'orientation dans des environnements complexes (bâtiments universitaires, hôpitaux, centres commerciaux) demeure difficile, particulièrement en l'absence de systèmes de navigation intérieurs adaptés. Les outils de cartographie actuels ne permettent pas de représenter de manière simple et progressive un espace tel qu'il est vécu et parcouru par un individu.
 
 ### Problématique
 
-> Décrivez le problème central ou la question de recherche que votre projet cherche à adresser, pourquoi s'y intéresser et les faiblesses des solutions actuelles. 
-> Le problème doit pouvoir être compris indépendamment de la solution envisagée.
+Les solutions existantes de navigation intérieure reposent sur des cartes statiques ou des infrastructures coûteuses (balises Bluetooth, calibration Wi-Fi). Elles ne reflètent pas l'expérience réelle de déplacement des usagers et demandent un investissement important de la part des gestionnaires de bâtiments. Il manque une approche légère et participative qui s'appuie directement sur les trajets des utilisateurs.
 
 ### Proposition et objectifs
 
-> Présentez votre proposition de projet et les objectifs visés. Expliquez en quoi votre approche répond à la problématique identifiée. 
-> Assurez-vous d'avoir, dans la mesure du possible, des objectifs mesurables, raisonnnables dans le temps et non redondants entre eux.
+Spip est une application mobile qui permet de **construire une carte en marchant** et de **laisser un parcours à suivre** dans des environnements complexes. L'application adopte une approche participative où les utilisateurs contribuent eux-mêmes aux données de navigation.
+
+Objectifs :
+- Permettre à un utilisateur de cartographier un trajet intérieur en temps réel via l'application
+- Permettre de suivre un parcours existant créé par un autre utilisateur
+- Développer une API REST pour la gestion des données de navigation
+- Valider le prototype dans au moins un bâtiment réel (ex. pavillon de l'UdeM)
 
 ### Méthodologie
 
-> Expliquez comment vous comptez aborder le projet : démarche générale, grandes étapes prévues, itérations, types de validations envisagées.
+Le projet suit une approche itérative :
+1. Conception des maquettes UI (Figma)
+2. Développement du backend (Node.js, PostgreSQL)
+3. Développement de l'application mobile (React Native + Expo)
+4. Tests et validation avec un bâtiment pilote
+5. Ajustements selon les retours
 
 ### Validation et Évaluation
 
-> Indiquez comment vous évaluerez que votre solution répond aux objectifs du projet (ex. scénarios d’usage, tests, retours utilisateurs, indicateurs qualitatifs ou quantitatifs).
+- Tests fonctionnels sur l'enregistrement et le suivi de parcours
+- Test utilisateur dans un pavillon de l'UdeM pour évaluer la facilité d'utilisation
+- Comparaison entre les parcours enregistrés et les trajets réels
 
+### Équipe
 
-## Équipe
+| Membre | Rôle |
+|--------|------|
+| Oualid Ouakli | Développeur unique (fullstack) |
 
-> Présentez les membres de l’équipe et le rôle principal de chacun dans le projet.
+**Superviseur** : Louis-Édouard Lafontant (louis.edouard.lafontant@umontreal.ca)
 
 ## Échéancier
 
