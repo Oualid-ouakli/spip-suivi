@@ -19,6 +19,40 @@ title: Suivi du projet
 
 ---
 
+
+## Semaines récentes — Interface, backend et précision
+
+### Objectifs de la période
+- Refaire l'interface de l'application selon les maquettes
+- Mettre en place le partage de parcours entre utilisateurs
+- Améliorer la précision de la navigation
+
+### Travail réalisé
+!!! abstract "Avancement"
+    - [x] Refonte complète des 6 écrans selon les maquettes (style Mapbox/Figma)
+    - [x] Suivi multi-étages avec vibration et pop-up de transition
+    - [x] Nommage et catégorisation des parcours (bâtiment + catégorie)
+    - [x] Backend : API REST (Node.js + Express)
+        - Migration vers PostgreSQL
+        - Déploiement en ligne sur Render
+    - [x] Cycle participatif complet : publier, télécharger et suivre un parcours partagé
+    - [x] Calibration guidée de la foulée par utilisateur
+    - [x] Recalage de la position sur des repères connus (correction de la dérive)
+    - [x] Filtre des parcours partagés par bâtiment
+    - [x] Graphe du profil des étages pendant le suivi
+
+### Décisions et ajustements
+!!! info "Décisions"
+    - Base de données : abandon de better-sqlite3 (incompatible Windows/Node 24), puis choix de PostgreSQL pour la production
+    - Localisation des parcours par bâtiment plutôt que par GPS, pour rester cohérent avec le principe de navigation sans GPS
+    - Calibration de la foulée par distance marchée (validée avec le superviseur)
+
+### Difficultés rencontrées
+!!! warning "Difficultés"
+    - Installation de better-sqlite3 impossible sur Windows (nécessitait des outils de compilation C++) : résolu en changeant de base de données
+    - Tunnel Expo (ngrok) instable au démarrage : contourné en relançant ou en passant en mode local
+    - Gestion de la proximité sans GPS : résolu en regroupant les parcours par bâtiment
+
 ## Semaine 1 (12–18 janvier)
 
 ### Objectifs de la période
